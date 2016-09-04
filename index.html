@@ -1,0 +1,695 @@
+<!doctype html>
+<html>
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp/mirthjuan) styles/main.css -->
+
+
+<style type = "text/css">
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+body::-webkit-scrollbar { display:none; }
+
+body {
+  background:#ffffff;
+  font-family: 'Poppins', sans-serif;
+  color:#000000;
+}
+
+
+.about {
+  overflow: auto; 
+  margin-top: 5%; 
+  margin-bottom: 20%;
+  height: 80%;
+  width:60%; 
+  left: 15%; 
+  position: absolute;
+  display:none;
+}
+
+.content {
+  position:fixed;
+  top:0px;
+  width:100%;
+  margin-top: -1%;
+  height: 100%;
+}
+
+.contentdivs {
+  overflow: auto; 
+  height:80%; 
+  width:60%; 
+  left: 15%; 
+  position: absolute;
+  display: none;
+  margin-bottom:40%;
+
+}
+
+.credit {
+  margin-top:14px;
+  font-size:14px;
+  font-style:italic;
+}
+
+
+#home{
+  position: relative;
+  float: right;
+}
+
+.horizontal {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position:relative;
+    top: 85%;
+    margin-top: 0%;
+}
+
+.horizontal li {
+    float: left;
+}
+
+.horizontal li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.horizontal li a:hover {
+    background-color: #111;
+}
+
+.horizontal .active{
+      background-color: #111;
+
+
+}
+
+.horizontal li a[onclick] { cursor: pointer }
+
+.intro {
+  width:100%;
+  text-align:center;
+  font-size:40px;
+  margin:0px 0 20px;
+}
+
+
+.logo{
+  position: relative;
+  left:85%;
+  top: 90%;
+  margin-bottom: 0%;
+  margin-right: 2%;
+
+}
+
+.vertnavbarcontainer{
+  height:100%;
+  position: absolute;
+  width: 100%;
+  margin-top: 5%;
+  display: none;
+  padding: 0px;
+
+}
+
+.vertical {
+    list-style-type: none;
+    margin: 2%;
+    padding: 0;
+    width: 100px;
+    background-color: #ffffff;
+  position: fixed; // Reposition logo from the natural layout
+  left: 75px;
+  top: 10%;
+  height: 200px;
+  opacity: 0;
+  display: inline-block;
+
+}
+
+
+/*.vertical li a[onclick] { cursor: pointer }*/ 
+.vertical li a[onclick]{
+  cursor: pointer;
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+.vertical li.active a{
+    background-color: #555;
+    color: white;
+}
+
+/* Change the link color on hover */
+.vertical li a:hover {
+    background-color: #555;
+    color: white;
+}
+</style>
+
+    <!-- endbuild -->
+
+</head>
+
+  
+
+
+<body>
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+
+<div class="content">
+
+    <div class = "logo" 
+      data-0 = "top: 85%; opacity:1; font-size: 450%; color: black;"
+      data-550="top: 10%; font-size: 100%; color: white; opacity:0;">
+      nicole 
+    </div>
+
+
+       
+   <ul class = "horizontal"
+   data-0= "opacity: 1; top:83%;"
+   data-600="top: 2%;">
+  <li id = "about"><a  onclick="about()" >about</a></li>
+  <li id = "design"><a  onclick="design()" >design</a></li>
+  <li id = "art"><a onclick="art()">art</a></li>
+  <li id = "current"><a onclick="current()">current</a></li>
+  <li id = "contact"><a onclick="contact()">contact</a></li>
+
+
+    <li id = "home"><a 
+    
+    data-100 = "opacity:0;"
+    data-500= " opacity:1;"
+    onclick="home()"
+    >nicole</a></li>
+  </ul>
+
+
+
+
+  <div class = "about"
+       data-650="opacity:0; display: initial;"
+       data-1400="opacity:1; "
+       data-1800 = "opacity:0; display: none;" >
+<b>A quirky girl with a particular fondness for the little things in life.</b> <br><br>
+
+My name is Nicole Phan!  I am a UX Designer and Researcher at a company called Mirth. I graduated from University of California - San Diego with a B.S in Cognitive Science - Human Computer Interaction and a B.A. in Interdisciplinary Computing in the Arts and Music - Music. <br><br>
+
+There are two things I love about design. First and foremost, I love design psychology; I love going out and doing ethnographic user studies. I think it's important to understand other people, not only to be make better designs, but to be a better person overall. The second, I love to make things. It's really amazing seeing my ideas come to life. <br><br>
+
+I'm more than just design and work though. I love animals, but cats the most. I love to explore cities and mountains. I love all kinds of music (country, metal, classical, opera, broadway, alternative, hip hop, foreign, etc). I like playing games (turn based RPGs, FPS - but they make me sick after awhile). I guess I do hipster activities (tea hop, reading in coffee shops, sketching, being that kid). <br><br>
+
+If I sound like a good fit for your team, or if you'd like a friend to do random things with, feel free to contact me!
+
+</div>
+
+
+
+<div 
+id = "designpage"
+class = "vertnavbarcontainer"
+  data-0 = "opacity:0; display: none;"
+  data-1800 = "opacity:0; display: initial;" 
+  data-2600 = "opacity: 1;"
+  data-3100 = "opacity: 1;"
+  data-3600 = "opacity: 0; display: none;"
+  >
+
+
+
+ <ul class="vertical"
+   data-0 = "opacity:0; display: none;"
+  data-1800 = "opacity:0; display: initial;" 
+  data-2600 = "opacity: 1;"
+  data-3100 = "opacity: 1;"
+  data-3600 = "opacity: 0; display: none;"
+
+ >
+   <li 
+   data-1800 = "transform:translateX(-550px);"
+       data-2200 = "transform:translateX(0px);"
+       data-1800="opacity:0; width:0%;"
+       data-2200= "opacity:1; width:100%;" 
+       data-3100="opacity:1; width:100%;"
+       data-3600= "opacity:0; ">
+       <a onclick = "fbgroups()">FB Groups</a></li>
+
+  <li   
+       data-1850 = "transform:translateX(-550px);"
+       data-2250 = "transform:translateX(0px);"
+       data-1850="opacity:0; width:0%;"
+       data-2250= "opacity:1; width:100%;" 
+       data-3100="opacity:1; width:100%;"
+       data-3600= "opacity:0; width:0%;"
+       ><a onclick="src()">SRC</a></li>
+
+  <li data-1900 = "transform:translateX(-550px);"
+       data-2300 = "transform:translateX(0px);"
+       data-1900="opacity:0; width:0%;"
+       data-2300= "opacity:1; width:100%;"
+       data-3100="opacity:1; width:100%;"
+       data-3600= "opacity:0; width:0%;"
+       ><a onclick="portfolio()">Portfolio</a></li>
+
+   </ul>
+
+
+
+
+  <div 
+  id = "FBGroups"
+   class = "contentdivs"
+
+  >
+  
+<b>Task: make something better through user centered design.</b><br><br>
+
+My Cognitive Design Studio course tasked us with one thing for ten weeks: make something better through design. Implicit in this was to go out perform user interviews, personas, affinity diagrams, visioning, and other aspects of rapid contextual design. <br><br>
+
+The initial focus was to create a centralized hub that would allow for group collaboration and organization. It would have the functionality of Google applications, like Docs and Drive, as well as the communication tools like Skype and Facebook. After the first round of interviews, we realized that the scope was too broad and agreed to do a redesign of Facebook groups. From there we moved to contextual interviews.<br><br>
+
+We needed to determine what individuals were using Facebook groups and for what purpose. After much discussion, we decided that our target audiences were college students and recently graduated professionals between 18-24. So, the interviews began. During these interviews, normally 3 people were present to take notes, ask questions, and observe. We interviewed clubs, groups, classmates, lone students, and professionals. Eventually, we collected over 25 interviews. Each week, following our interviews, we held interpretation sessions for our group to consolidate the information that we had learned. Using the knowledge we gained, we created our affinity diagram. Many hours were spent analyzing and organizing the diagram which bore our use cases and personas. <br><br>
+
+Thanks to our user data, we were able to do our paper prototypes very quickly. This was followed by testing and many, many iterations of design. Once we noticed a trend in working aspects of the design, we began high fidelity prototyping of those aspects. For more uncertain ideas, we continued paper prototyping. By this time we had reached a product in which we were very happy about, although by no means a completed project. We consolidated our findings and presented them to our class. <br><br>
+
+I feel like the biggest takeaway from this project was team management and collaboration. It also gave perspective in the importance of user data and the amount of time it takes to gather and analyze it. 
+ </div>
+
+<div
+  id = "Src"
+  class = "contentdivs"
+ 
+  >
+
+<b>Task: redesign a client's website. </b><br><br>
+
+For my Cognitive Aspects of Multimedia Design (Advanced) class, we were to find a client to work with for eleven weeks. We would offer them a complimentary redesign of their website. My group chose to work with the Sustainability Resource Center (SRC) at UCSD. <br><br>
+
+We drafted a client proposal and gathered initial requirements through client and user interviews. Through these initial interviews, we realized we were not serving just one organization, but two. One was a student run sustainability collective, while the other was a university funded sustainability programs office. The two entities existed within the same space in tension at the time. This prompted my group to extend our user studies to better determine the groups that we were serving. We found that the groups that used the site were not aligned with our client's initial beliefs. <br><br>
+
+Then, we took time to perform a competitive analysis of other sustainability center websites. Competitors included UCLA, Harvard, and other universities. We analyzed the differences and similarities and compiled them into a presentation. During this time we also conducted more user interviews to better determine use cases. <br><br>
+
+We then made a creative brief to present to our client and representatives of the student collective. The creative brief addressed many tensions between the groups in terms of the goals of the website (audience, tone, objectives).<br><br>
+
+In the upcoming weeks, we created our storyboard and functional specifications, which guided our rapid prototyping of our website. This included our information architecture, basic interaction, style guide, wireframes, mock ups, and functional inventory of the site. We presented this to the client and collaborated on adjustments. <br><br>
+
+Following that we created a functional prototype which we presented to our class first for criticism and feedback. We made further alterations and then presented it to our client. We made plans to continue our collaboration into the next quarter to implement the website and provide any needed assistance. <br><br>
+Learning to manage expectations was very crucial to the success of this project. I also learned a lot about social politics and how to better present information.<br><br>
+
+
+</div>
+
+<div
+  id = "Portfolio"
+  class = "contentdivs"
+
+  >
+Check out the site at <a href="http://www.nicoleaydee.com/">nicoleaydee.com</a>!<br><br>
+
+<b>Goal: design, code, and host a website from scratch. </b> <br><br>
+
+I had dabbled with webpages through my middle school days as a hobby (Neopets, Anime Forums), making graphics and simple CSS and HTML. However, I was curious about the actual process of creating your own website. I began planning this portfolio in the summer of 2012. It has been one of my most rewarding projects in terms of what I learned and the amount of fun I had doing it.  <br><br>
+
+<b>Process</b><br>
+As I knew little coding at the time, I started from my first passion: design. I began making sketches of all the potential websites. I wanted it to be a reflection of myself, hopefully different and whimsical. Once I had consolidated my design, I unknowingly began my first mockup (I had not taken any design courses and was unaware of the terminology or process). It was pretty exciting. But not nearly as exciting as the coding. <br><br>
+
+Design is fun. I absolutely love it, but it is something that I am comfortable with. But coding was something unknown. I spent several days learning HTML and CSS under my professor's guidance and decided to use this portfolio as my final presentation in the winter. Nothing is as rewarding as seeing an idea come to fruition. Once I had my code done, I purchased a domain and hosting server. Then my website was live! Though I know it was severely lacking (responsive design, hi-resolution, interaction), I was, and am still, very happy with all that I had learned. It is an ongoing project. 
+
+ 
+</div>
+</div>
+
+<div 
+id = "artpage"
+class = "vertnavbarcontainer"
+  data-0 = "opacity:0; display: none;"
+  data-3700 = "opacity:0; display: initial;"  
+  data-4500 = "opacity: 1;"
+  data-5000 = "opacity: 1;"
+  data-5500 = "opacity: 0; display: none;"
+  >
+
+    <ul class="vertical" 
+  data-0 = "opacity:0; display: none;"
+  data-3700 = "opacity:0; display: initial;"
+  data-4500 = "opacity:1;"
+  data-5000 = "opacity:1;"
+  data-5500 = "opacity:0; display: none;">
+  
+   <li data-3700 = "transform:translateX(-550px);"
+       data-4100 = "transform:translateX(0px);"
+       data-3700="opacity:0; width:0%;"
+       data-4100= "opacity:1; width:100%;" 
+       data-5000="opacity:1; width:100%;"
+       data-5500= "opacity:0; ">
+       <a onclick = "gesture()">Gesture</a></li>
+
+  <li data-3750 = "transform:translateX(-550px);"
+       data-4150 = "transform:translateX(0px);"
+       data-3750="opacity:0; width:0%;"
+       data-4150= "opacity:1; width:100%;"
+       data-5000="opacity:1; width:100%;"
+       data-5500= "opacity:0; width:0%;">
+       <a onclick = "game()">Game</a></li>
+     </ul>
+
+
+
+<div
+id = "game"
+class = "contentdivs"
+
+>
+
+A personal game.   <br><br>
+
+Our goal is to make a game. The idea is simple enough, however quickly into beginning this project, we encountered several roadblocks (worldbuilding, time management, conflicting ideas, etc). <br><br>
+
+We've gone through several brainstorming sessions and prototyped some interactions and gameplay. Currently, I am trying to make assets and a clear storyboard.  <br><br>
+
+More to come! 
+  </div>
+
+<div
+  id = "gesture"
+  class = "contentdivs"
+>Memory is an interesting thing. Most of our movements go unnoticed and forgotten. I think it's a fun and interesting thing to highlight where we have fidgeted. <br><br>
+
+Using processing, I mapped out my past gestures. Each time an individual clicks on the screen, they will see their past movements. To increase the visualization, hold the mouse press. <br>
+<br>
+
+<iframe src="http://nicoleaydee.com/process/gesture.html" width="700" height="500" scrolling="no" style="border:none"></iframe>
+</div>
+</div>
+
+
+
+
+
+<div
+id = "currentpage"
+class = "vertnavbarcontainer"
+  data-0 = "opacity:0; display: none;"
+  data-5600 = "opacity:0; display: initial;" 
+  data-6400 = "opacity: 1;"
+  data-6900 = "opacity: 1;"
+  data-7400 = "opacity: 0; display: none;"
+  >
+
+  <ul class="vertical" 
+
+  data-0 = "opacity:0; display: none;"
+  data-5600 = "opacity:0; display: initial;"
+  data-6400 = "opacity:1;"
+  data-6900 = "opacity:1;"
+  data-7400 = "opacity:0; display: none;">
+   <li 
+   data-5600 = "transform:translateX(-550px);"
+       data-6000 = "transform:translateX(0px);"
+        data-5600="opacity:0; width:0%;"
+       data-6000= "opacity:1; width:100%;" 
+       data-6900="opacity:1; width:100%;"
+       data-7400= "opacity:0; ">
+       <a onclick = "mirth()">Mirth</a></li>
+
+  <li   
+       data-5650 = "transform:translateX(-550px);"
+       data-6050 = "transform:translateX(0px);"
+       data-5650="opacity:0; width:0%;"
+       data-6050= "opacity:1; width:100%;" 
+       data-6900="opacity:1; width:100%;"
+       data-7400= "opacity:0; "
+       ><a onclick = "spotify()">Spotify365</a></li>
+
+  <li data-5700 = "transform:translateX(-550px);"
+       data-6100 = "transform:translateX(0px);"
+       data-5700="opacity:0; width:0%;"
+       data-6100= "opacity:1; width:100%;"
+       data-6900="opacity:1; width:100%;"
+       data-7400= "opacity:0;"
+       ><a onclick = "newport()">Portfolio v2</a></li>
+
+    <li data-5750 = "transform:translateX(-550px);"
+       data-6150 = "transform:translateX(0px);"
+       data-5750="opacity:0; width:0%;"
+       data-6150= "opacity:1; width:100%;"
+       data-6950="opacity:1; width:100%;"
+       data-7450= "opacity:0;"
+       ><a onclick = "smallgame()">Game</a></li>
+
+            
+
+   </ul>
+
+
+
+<div
+  id = "mirth"
+  class = "contentdivs"
+  >
+I currently work as a user experience designer and researcher at Mirth! Essentially, my job is to advocate for the user. To do this, I do a wide range of things-- from conducting usability studies, being out in the field doing ethnographic research, creating charts and diagrams to easily communicate findings, dishing out low fidelity mockups, to building empathy for our users.<br><br>
+
+I work closely with a team of developers, product managers, and other designers (UX, visual, interaction) to ensure the best experience. <br><br>
+
+Pictures to come!
+</div>
+
+<div
+  id = "spotify365"
+  class = "contentdivs"
+  >
+
+This is a two-part collaborative project.<br><br>
+
+Part 1 (Complete): <br>
+The goal was to pick a song to represent each day in 2015. This may be a song that I heard on the radio, showed up in a movie, or simply a song that was 'stuck' in my head on that day. The only condition was that there would be no duplicate songs. The 365 project began January 1, 2015.<br><br>
+Part 2: <br>
+More to come soon!
+</div>
+
+<div
+class = "contentdivs"
+id = "newportfolio"
+>
+This is a collaborative exercise between a developer and myself.<br><br>
+
+Our goal is to learn new skills and execute them in a practical manner. I am working on design, content, and interaction then passing it off. Currently, i am still working on content. I have passed off the general design and interactions to him. <br><br>
+
+<b>UPDATE</b><br>So this is the progress on the portfolio.  Currently nitpicking visual and interaction changes. As this is a work and progress, feel free to reference back to my old portfolio at <a href="http://aydee.me/">aydee.me</a>.<br><br>
+More to come! 
+</div>
+
+
+<div id = "smallgame"
+class = "contentdivs"
+> This is a fun collaborative project.  <br><br>
+
+Our goal is to make a game. The idea is simple enough, however quickly into beginning this project, we encountered several roadblocks (worldbuilding, time management, conflicting ideas, etc). <br><br>
+
+We've gone through several brainstorming sessions and prototyped some interactions and gameplay. Currently, I am trying to make assets and a clear storyboard.  <br><br>
+
+More to come!  </div>
+
+</div>
+
+
+<div id="Contact"  class = "about"
+ data-7400="display:none";
+ data-7500= "opacity:0; display:initial;"
+ data-8300= "opacity:1; "
+  data-8500= "opacity:1;" >
+More to come! </div>
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+
+<!-- endbower -->
+
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<!-- injector:js -->
+
+<!-- endinjector -->
+<!-- endbuild -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.11/skrollr.min.js"></script>
+<script>
+
+skrollr.init();
+
+$( window).scroll(function(){
+  if (window.scrollY > 600 && window.scrollY < 1400 ){
+    $('.horizontal').children().removeClass('active');
+    $("#about").addClass('active');
+  }
+  else if (window.scrollY >2200 && window.scrollY < 3600){
+        $('.horizontal').children().removeClass('active');
+    $("#design").addClass('active');
+  }
+    else if (window.scrollY >3800 && window.scrollY < 5600){
+    $('.horizontal').children().removeClass('active');
+    $("#art").addClass('active');
+  }
+    else if (window.scrollY >5700 && window.scrollY < 7100){
+    $('.horizontal').children().removeClass('active');
+    $("#current").addClass('active');
+  }
+  else if (window.scrollY >7200){
+    $('.horizontal').children().removeClass('active');
+    $("#contact").addClass('active');
+  }
+})
+
+$('.vertical li').click(function(){
+    $('.vertical li').removeClass('active');
+    $(this).addClass('active');
+})
+
+
+
+
+
+function home() {
+    window.scrollTo( 0 , 0);
+}
+function about() {
+    window.scrollTo( 0 , 1400);
+}
+
+function design() {
+    window.scrollTo( 0 , 2600);
+}
+function art() {
+    window.scrollTo( 0 , 4500);
+}
+function current() {
+    window.scrollTo( 0 , 6400);
+
+}
+function contact() {
+    window.scrollTo( 0 , 8400);
+}
+
+
+function fbgroups(){
+  $("#Portfolio").fadeTo("slow", 0, function(){});
+  $( "#Portfolio" ).hide();
+  $("#Src").fadeTo("slow", 0, function(){});
+  $( "#Src" ).hide();
+  $("#FBGroups").fadeTo("slow", 1, function(){});
+  $( "#FBGroups" ).show();  
+}
+
+function src(){
+  $("#Portfolio").fadeTo("slow", 0, function(){});
+  $( "#Portfolio" ).hide();
+  $("#FBGroups").fadeTo("slow", 0, function(){});
+  $( "#FBGroups" ).hide();
+  $("#Src").fadeTo("slow", 1, function(){});
+  $( "#Src" ).show();
+
+}
+
+function portfolio(){
+  $("#Src").fadeTo("slow", 0, function(){});
+  $( "#Src" ).hide();
+  $("#FBGroups").fadeTo("slow", 0, function(){});
+  $( "#FBGroups" ).hide();
+  $("#Portfolio").fadeTo("slow", 1, function(){});
+  $( "#Portfolio" ).show();
+
+}
+
+function mirth(){
+  $( "#spotify365" ).hide();
+  $("#spotify365").fadeTo("slow", 0, function(){});
+  $("#newportfolio").fadeTo("slow", 0, function(){});
+  $( "#newportfolio" ).hide();
+  $("#smallgame").fadeTo("slow", 0, function(){});
+  $( "#smallgame" ).hide();
+  $("#mirth").fadeTo("slow", 1, function(){});
+  $( "#mirth" ).show();
+
+}
+
+function spotify(){
+  $( "#mirth" ).hide();
+  $("#mirth").fadeTo("slow", 0, function(){});
+  $("#newportfolio").fadeTo("slow", 0, function(){});
+  $( "#newportfolio" ).hide();
+  $("#smallgame").fadeTo("slow", 0, function(){});
+  $( "#smallgame" ).hide();
+  $("#spotify365").fadeTo("slow", 1, function(){});
+  $( "#spotify365" ).show();
+
+}
+function newport(){
+  $( "#spotify365" ).hide();
+  $("#spotify365").fadeTo("slow", 0, function(){});
+  $("#mirth").fadeTo("slow", 0, function(){});
+  $( "#mirth" ).hide();
+  $("#smallgame").fadeTo("slow", 0, function(){});
+  $( "#smallgame" ).hide();
+  $("#newportfolio").fadeTo("slow", 1, function(){});
+  $( "#newportolio" ).show();
+}
+
+  function smallgame(){
+  $( "#spotify365" ).hide();
+  $("#spotify365").fadeTo("slow", 0, function(){});
+  $("#mirth").fadeTo("slow", 0, function(){});
+  $( "#mirth" ).hide();
+  $("#newportfolio").fadeTo("slow", 0, function(){});
+  $( "#newportfolio" ).hide();
+  $("#smallgame").fadeTo("slow", 1, function(){});
+  $( "#smallgame" ).show();
+
+}
+function game(){
+  $( "#gesture" ).hide();
+  $("#gesture").fadeTo("slow", 0, function(){});
+  $("#game").fadeTo("slow", 1, function(){});
+  $( "#game" ).show();
+
+}
+
+function gesture(){
+  $("#game").hide();
+  $("#game").fadeTo("slow", 0, function(){});
+  $("#gesture").fadeTo("slow", 1, function(){});
+  $( "#gesture" ).show();
+
+}
+
+
+</script>
+
+</body>
+</html>
